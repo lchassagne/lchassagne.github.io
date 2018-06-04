@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113051118-1"></script>
 <script>
@@ -115,14 +115,14 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
       <div class="totals-value" id="cart-total">1707.04</div>
     </div>
   </div>
-      
+
       <button id="checkoutButton" class="checkout" onclick="completeCheckout()">Checkout</button>
   </div>
 
 
 <div id="checkoutError">
-  <b>Error in Checkout</b> 
-  <br/>"Connection to data source updateOrderDB can not be established! 
+  <b>Error in Checkout</b>
+  <br/>"Connection to data source updateOrderDB can not be established!
   <br/>Reason: Invalid operation. The connection is closed. - complete stack
   <br/>at System.Data.SqlClient.SqlConnection.GetOpenConnection()
   <br/>at System.Data.SqlClient.SqlConnection.get_Parser()
@@ -179,13 +179,13 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
     customerName = node.value
 
     //Deprecated guid()
-    var date = new Date("1/1/2001");  
+    var date = new Date("1/1/2001");
     dedupKey = customerName + date.getMinutes()
 
     //alert (customerName);
 
     // Requires jQuery
-    var eventObject = '{ ' + 
+    var eventObject = '{ ' +
         ' "client_url": "https://rpm.newrelic.com/accounts/1818495/applications/105833762", ' +
         ' "service_key"\: "' + serviceKey + '", ' +
         ' "incident_key"\: "' + dedupKey + '", ' +
@@ -199,13 +199,13 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
             ' "href": "http://www.timchinchen.co.uk/DemoImages/NRErrors1.png", ' +
             ' "type": "image" ' +
         ' }, ' +
-    
-        ' { ' +   
+
+        ' { ' +
         ' "text": "Conference URL (Zoom)", ' +
         ' "href": "https://pagerduty.zoom.us/j/5080555253", ' +
         ' "type": "link" ' +
         ' }, ' +
-    
+
       '{' +
       '  "text": "Conference Dial (Zoom)",  ' +
       '  "href": "tel:+442036950088,,5080555253#",  ' +
@@ -223,7 +223,7 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
     ' } ' +
     ' ], ' +
   ' "details": { ' +
-    ' "body": "[Critical] Increased response time detected on the Checkout page, High Error rates <br/> Object Reference Not Set and ADO.NET Connection pool exceeded errors detected" , ' +   
+    ' "body": "[Critical] Increased response time detected on the Checkout page, High Error rates <br/> Object Reference Not Set and ADO.NET Connection pool exceeded errors detected" , ' +
     ' "Order Value": ' + orderValue + ', ' +
     ' "priority": "High", ' +
     ' "title": "[Critical] Increased response time detected on the Checkout page, High Error rates", ' +
@@ -232,7 +232,7 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
     ' "Customer": "'+ customerName + '" ' +
     ' }, ' +
   ' "description": "[Critical] Increased response time detected on the Checkout page, High Error rates" ' +
-  '}' 
+  '}'
 
   console.log(eventObject)
 
@@ -281,7 +281,7 @@ Name: <input type="text" name="customerName" id="customer-name" value="Paul Sylv
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-  
+
 
     <script  src="js/index.js"></script>
 
